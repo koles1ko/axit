@@ -27,7 +27,7 @@ gulp.task('script', function() {
     .pipe(uglify())
     .pipe(gulp.dest('app/js'))
 });
-gulp.task('script-js', function() {
+gulp.task('script', function() {
   return gulp.src(['app/js/main.js'])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -70,4 +70,4 @@ gulp.task('watch', function () {
   gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 
-gulp.task('default', gulp.parallel('sass', 'watch', 'browser-sync', 'script', 'style', 'script-js'))
+gulp.task('default', gulp.parallel('sass', 'watch', 'browser-sync', 'script', 'style'))

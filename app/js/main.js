@@ -1,46 +1,15 @@
 $(function(){
-  $('.menu__btn').on('click', function(){
-    $('.header__menu-list').slideToggle();
-  }); //Для бургера!
 
-  $('.intro__slider').slick({
-    dots: false,
-    arrows: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [
-      // {
-      //   breakpoint: 768,
-      //   settings: {
-      //     arrows: false,
-      //     dots: true,
-      //   }
-      // },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     arrows: false,
-      //     centerMode: true,
-      //     centerPadding: '40px',
-      //     slidesToShow: 1
-      //   }
-      // }
-    ]
-  });// Обычный одиночный слайдер!
+  // $('.menu__btn').on('click', function(){
+  //   $('.menu__list').slideToggle();
+  // }); Для бургера!
 
-});
-
-
-
-
-
-
-
-
-
-
-
-
+  //   $('.class').slick({
+  //   dots: true,
+  //   arrows: false,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 4,
+  // }); Обычный одиночный слайдер!
 
 	//  $('.slider-for').slick({
 	//   slidesToShow: 1,
@@ -68,6 +37,4 @@ $(function(){
   //   return false;
   // }); Для табов!
 
-// });
-
-
+});

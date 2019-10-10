@@ -21,11 +21,11 @@ li {
   list-style: none;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  color: $main-color;
-  background-color: $body-bg;
+  font-family:;
+  font-weight:;
+  font-size:;
+  line-height:;
+  color:;
 }
 .wrapper{
   display: flex;
@@ -39,12 +39,7 @@ body {
   flex: 0 0 auto;
 }
 .container {
-  max-width: 1010px;
+  max-width:;
   margin: 0 auto;
-  padding: 0 15px;
-}
-.container-fluid{
-  max-width: 1460px;
-  margin: 0 auto;
-  padding: 0 15px;
+  padding:;
 }
