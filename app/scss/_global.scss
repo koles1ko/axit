@@ -87,6 +87,8 @@ button{
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
+  text-align: center;
+  margin-bottom: 62px;
   &::after{
     position: absolute;
     content: '';
@@ -99,6 +101,11 @@ button{
     background-color: $orange;
     
   }
+}
+.undertitle{
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
 }
 
 
