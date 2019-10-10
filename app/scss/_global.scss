@@ -39,8 +39,30 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-
-
+.default-btn{
+  padding: 11px 30px;
+  color: #fff;
+  font-family: 'Open Sans-semi';
+  font-size: 15px;
+  font-weight: 400;
+  border: 2px solid #fff;
+}
+.default-input{
+  width: 100%;
+  padding: 16px 13px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  &::placeholder{
+    color: #bdbdbd;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+button{
+  background-color: $orange;
+  color: #fff;
+}
 
 
 
