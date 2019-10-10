@@ -63,7 +63,43 @@ button{
   background-color: $orange;
   color: #fff;
 }
-
+.subtitle{
+  color: #212121;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  margin: 0;
+  &::after{
+    position: absolute;
+    content:'';
+    left: 0;
+    bottom: -25px;
+    display: block;
+    background-color: $orange;
+    width: 64px;
+    height: 2px;
+  } 
+}
+.main-title{
+  @include rale;
+  color: #212121;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: $orange;
+    
+  }
+}
 
 
 
