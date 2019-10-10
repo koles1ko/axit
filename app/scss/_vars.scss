@@ -1,0 +1,23 @@
+$main-color: #373535;
+$header-bg: #191919;
+$body-bg: #ebebeb;
+$btn-bg: #52abdf;
+$soc-bg: #d1d1d1;
+@mixin dax-black{
+  font-family: 'DaxCondensed-Black';
+  text-transform: uppercase;
+}
+@mixin dax{
+  font-family: 'DaxCondensed';
+  text-transform: uppercase;
+}
+@mixin dft-form{
+  border: 1px solid #e0dfdf;
+  border-radius: 4px;
+  padding: 11px;
+  ::placeholder{
+    font-size: 13px;
+    opacity: .7;
+    font-weight: 400;
+  }
+}
