@@ -21,11 +21,7 @@ li {
   list-style: none;
 }
 body {
-  font-family:;
-  font-weight:;
-  font-size:;
-  line-height:;
-  color:;
+  @include main-text;
 }
 .wrapper{
   display: flex;
@@ -39,7 +35,14 @@ body {
   flex: 0 0 auto;
 }
 .container {
-  max-width:;
+  max-width: 1120px;
   margin: 0 auto;
-  padding:;
+  padding: 0 15px;
 }
+
+
+
+
+
+
+

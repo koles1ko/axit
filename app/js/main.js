@@ -1,8 +1,8 @@
 $(function(){
 
-  // $('.menu__btn').on('click', function(){
-  //   $('.menu__list').slideToggle();
-  // }); Для бургера!
+  $('.header__burger').on('click', function(){
+    $('.header__list').slideToggle();
+  }); //Для бургера!
 
   //   $('.class').slick({
   //   dots: true,

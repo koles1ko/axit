@@ -1,3 +1,45 @@
 @import 'vars';
 @import 'global';
 @import 'fonts';
+.header{
+  background-color: #000;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+  }
+  &__menu{
+
+  }
+  &__list{
+    li{
+      display: inline-block;
+    }
+    li + li{
+      margin-left: 47px;
+    }
+    a{
+      color: #fff;
+      opacity: .69;
+      font-family: 'Open Sans-semi';
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  &__burger{
+    display: none;
+    div{
+      width: 30px;
+      height: 4px;
+      border-radius: 3px;
+      background-color: #fff;
+      opacity: .69;
+      & + div{
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@import 'media';

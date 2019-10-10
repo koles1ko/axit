@@ -1,0 +1,17 @@
+@mixin main-text{
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+}
+@mixin rale{
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #212121;
+}
+$section: #f5f5f5;
+$orange: #ff9b51;
+$grey: #333333;
