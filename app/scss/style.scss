@@ -393,11 +393,16 @@
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.price__inner{
+  display: flex;
+  justify-content: space-between;
+}
 .price__item{
   max-width: 343px;
   width: 100%;
-  
+  margin-top: 117px;
   color: #fff;
+  position: relative;
 }
 .price__item-rate,
 .price__item-cost{
@@ -441,15 +446,32 @@
   display: block;
 }
 .price__item-wrapper{
-  transform: translatey(40px)
+  height: 217px;  
+  overflow: hidden;
+  transition: all 1s;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
 }
+
 .price__item:hover .price__item-wrapper{
-  color: red;
+  height: 251px;
+  transform: translateY(-34px);
 }
-.price__item{
-  ul{
+
+.price__item-list{
+  padding-top: 217px;
+  li{
+    @include main-text;
+    text-align: center;
     width: 100%;
-    background-color: green;
+    padding: 14px 0;
+    text-transform: uppercase;
+    background-color: #fff;
+    & + li{
+      margin-top: 1px;
+    }
   }
 }
 //end price
