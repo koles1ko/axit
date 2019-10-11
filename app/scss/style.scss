@@ -475,4 +475,54 @@
   }
 }
 //end price
+//start customers
+.customers{
+  padding-top: 105px;
+}
+.customers__inner{
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.customers__item{
+  width: 100%;
+  max-width: 273px;
+  
+}
+.customers__speech{
+  text-align: left;
+  background-color: $section;
+  padding: 24px 13px;
+  font-style: italic;
+  margin-bottom: 23px;
+  position: relative;
+  border-radius: 4px;
+  &::after{
+    position: absolute;
+    content:'';
+    left: 25px;
+    bottom: -15px;
+    border-top: 15px solid $section;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+}
+.customers__profile{
+  display: flex;
+  align-items: center;
+}
+.customers__photo{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.customers__name{
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+//end customers
 @import 'media';
