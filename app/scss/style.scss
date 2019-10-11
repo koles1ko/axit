@@ -52,9 +52,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   
-  &__wrapper{
-    background-color: rgba(#000, .8);
-  }
+  
   &__inner{
     padding-top: 180px;
     height: 713px;
@@ -142,6 +140,7 @@
     }
   }
 }
+
 //end intro
 //start social-media
 .social-media{
@@ -478,6 +477,7 @@
 //start customers
 .customers{
   padding-top: 105px;
+  padding-bottom: 100px;
 }
 .customers__inner{
   margin-top: 55px;
@@ -525,4 +525,72 @@
 }
 
 //end customers
+//start style
+.style{
+  width: 100%;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .main-title{
+    color: #fff;
+    &::after{
+      background-color: #fff;
+    }
+  }
+  .default-btn{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+.style__inner{
+  padding-top: 75px;
+}
+.style__desc{
+  color: #fff;
+  opacity: .8;
+  text-align: center;
+  margin-bottom: 33px;
+}
+.style__link{
+  display: flex;
+  justify-content: center;
+}
+//end style
+//start contact
+.contact{
+  padding-top: 108px;
+  padding-bottom: 80px;
+}
+.contact__form{
+  margin-top: 80px;
+}
+.contact__form-top{
+  display: flex;
+}
+.contact__form-sub{
+  width: 527px;
+  input{
+    display: block;
+    width: 100%;
+    max-width: 527px;
+    padding: 10px 13px;
+    outline: none;
+    border:none;
+    box-shadow: 0 1px 0 rgba(0, 0, 1, 0.16);
+    & + input{
+      margin-top: 30px;
+    }
+    &::placeholder{
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+  }
+}
+.contact__form-message{
+  border: none;
+  outline: none;;
+}
+//end contact
 @import 'media';
