@@ -29,6 +29,13 @@
       font-family: 'Open Sans-semi';
       font-size: 14px;
       font-weight: 400;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 3px;
+      position: relative;
+      &:hover{
+        opacity: 1;
+        border-bottom: 1px solid #fff;
+      }
     }
   }
   &__burger{
@@ -44,6 +51,15 @@
       }
     }
   }
+}
+.icon-facebook,
+.icon-twitter,
+.icon-google,
+.icon-pinterest,
+.icon-instagram,
+.icon-stumbleupon,
+.icon-rss{
+  position: absolute;
 }
 //end header
 //start intro
@@ -565,12 +581,14 @@
 }
 .contact__form{
   margin-top: 80px;
+  
 }
 .contact__form-top{
   display: flex;
 }
 .contact__form-sub{
   width: 527px;
+  margin-right: 67px;
   input{
     display: block;
     width: 100%;
@@ -589,8 +607,45 @@
   }
 }
 .contact__form-message{
-  border: none;
-  outline: none;;
+  width: 527px;
+  textarea{
+    min-height: 168px;
+    resize: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 1, 0.16);
+    padding: 10px 13px;
+    width: 100%;
+    max-width: 527px;
+  }
+}
+.contact__form-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 43px;
+  button{
+    outline: none;
+    border:2px solid $section;
+    border-top: none;
+  }
 }
 //end contact
+//start footer
+.footer{
+  background-color: #000;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  .social-media__list{
+    margin-bottom: 13px;
+    a{
+      color: #fff;
+      font-size: 24px;
+    }
+  }
+  &__copy{
+    color: #fff;
+  }
+}
+//end footer
 @import 'media';
