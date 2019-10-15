@@ -31,10 +31,10 @@
       font-weight: 400;
       border-bottom: 1px solid transparent;
       padding-bottom: 3px;
-      position: relative;
+      transition: all .4s;
       &:hover{
         opacity: 1;
-        border-bottom: 1px solid #fff;
+            
       }
     }
   }
@@ -52,15 +52,7 @@
     }
   }
 }
-.icon-facebook,
-.icon-twitter,
-.icon-google,
-.icon-pinterest,
-.icon-instagram,
-.icon-stumbleupon,
-.icon-rss{
-  position: absolute;
-}
+
 //end header
 //start intro
 .intro{
@@ -71,7 +63,7 @@
   
   &__inner{
     padding-top: 180px;
-    height: 713px;
+    min-height: 713px;
     display: flex;
     justify-content: space-between;  
   }
@@ -186,7 +178,7 @@
     li{
       display: inline-block;
       & + li{
-        margin-left: 60px;
+        margin-left: 45px;
         
       }
     }
@@ -194,8 +186,21 @@
       color: #ccc;
       font-size: 48px;
       font-weight: 400;
+      position: relative;
     }
   }
+}
+.icon-facebook,
+.icon-twitter,
+.icon-google,
+.icon-pinterest,
+.icon-instagram,
+.icon-stumbleupon,
+.icon-rss{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'icomoon';
 }
 //end social-media
 //start soft
@@ -290,7 +295,7 @@
 }
 .sub-list__inner{
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 .sub-list__image{
   margin-right: 125px;
@@ -312,22 +317,35 @@
   line-height: 20px;
   margin-bottom: 35px;
 }
+.icon-cloud-upload::before,
+.icon-cloud-download::before{
+  font-family: 'icomoon';
+  position: absolute;
+  top: 6px;
+  left: -60px;
+  color: $orange;
+  padding: 10px;
+  border: 2px solid $orange;
+  border-radius: 50%;
+  font-size: 16px;
+}
 .sub-list__list{
   font-size: 14px;
   font-weight: 400;
   li{
     margin-left: 70px;
     position: relative;
-    &::before{
-      position: absolute;
-      content:'';
-      left: -70px;
-      top: 6px;
-      width: 40px;
-      height: 40px;
-      border: 2px solid $orange;
-      border-radius: 50%;
-    }
+    // &::before{
+    //   font-family: 'icomoon';
+    //   position: absolute;
+    //   content: "\f0ed";
+    //   left: -70px;
+    //   top: 6px;
+    //   width: 40px;
+    //   height: 40px;
+    //   border: 2px solid $orange;
+    //   border-radius: 50%;
+    // }
     & + li{
       margin-top: 35px;
     }
@@ -351,7 +369,7 @@
 }
 .standart__inner{
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 
 }
 .standart__info{
@@ -371,36 +389,48 @@
   .undertitle{
     margin-bottom: 180px;
   }
+  &__desc{
+    line-height: 20px;
+  }
 }
 .awesome__items{
   display: flex;
   justify-content: space-between;
 }
+
 .awesome__item{
   text-align: center;
   width: 100%;
   max-width: 353px;
   position: relative;
-  &::before{
-    position: absolute;
-    content: '';
-    top: -95px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70px;
-    height: 70px;
-    border: 2px solid $orange;
-    border-radius: 50%;
-  }
+  padding: 0 10px;
   .subtitle{
     margin-bottom: 25px;
     &::after{
       display: none;
     }
-    
-  }
-
+  }  
+  
 }
+.icon-lighqtbulb-o:before,
+.icon-flash:before,
+.icon-keyboard-o:before{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  top: -95px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'icomoon';
+  font-size: 32px;
+  color: $orange;
+  border: 2px solid $orange;
+  border-radius: 50%;
+}
+
 //end awesome
 //start price
 .price{
@@ -418,6 +448,9 @@
   margin-top: 117px;
   color: #fff;
   position: relative;
+  & + &{
+    margin-left: 2px;
+  }
 }
 .price__item-rate,
 .price__item-cost{
@@ -503,7 +536,9 @@
 .customers__item{
   width: 100%;
   max-width: 273px;
-  
+  & + &{
+    margin-left: 3px;
+  }
 }
 .customers__speech{
   text-align: left;
@@ -544,10 +579,11 @@
 //start style
 .style{
   width: 100%;
-  height: 320px;
+  min-height: 320px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
   .main-title{
     color: #fff;
     &::after{
@@ -562,6 +598,7 @@
 }
 .style__inner{
   padding-top: 75px;
+  padding-bottom: 30px;
 }
 .style__desc{
   color: #fff;
@@ -596,7 +633,7 @@
     padding: 10px 13px;
     outline: none;
     border:none;
-    box-shadow: 0 1px 0 rgba(0, 0, 1, 0.16);
+    border-bottom: 1px solid rgba(0, 0, 1, 0.16);
     & + input{
       margin-top: 30px;
     }
@@ -613,7 +650,7 @@
     resize: none;
     border: none;
     outline: none;
-    box-shadow: 0 1px 0 rgba(0, 0, 1, 0.16);
+    border-bottom: 1px solid rgba(0, 0, 1, 0.16);
     padding: 10px 13px;
     width: 100%;
     max-width: 527px;
@@ -627,6 +664,9 @@
     outline: none;
     border:2px solid $section;
     border-top: none;
+    &:hover{
+      cursor: pointer;
+    }
   }
 }
 //end contact

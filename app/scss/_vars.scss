@@ -16,3 +16,8 @@
 $section: #f5f5f5;
 $orange: #ff9b51;
 $grey: #333333;
+
+@mixin mobile{
+  text-align: center;
+  
+}
