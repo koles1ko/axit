@@ -4,7 +4,27 @@ $(function(){
     $('.header__list').slideToggle();
   }); //Для бургера!
 
-  //   $('.class').slick({
+  $(function () {
+    $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+      $(this)
+      .addClass('active')
+      .siblings()
+      .removeClass('active')
+      .closest('div.tabs')
+      .find('div.tabs__content')
+      .removeClass('active')
+      .eq($(this).index())
+      .addClass('active');
+    });
+  });
+
+  
+});
+// $(function () {
+//   new WOW().init();  
+// });
+
+//   $('.class').slick({
   //   dots: true,
   //   arrows: false,
   //   slidesToShow: 4,
@@ -36,20 +56,3 @@ $(function(){
   //   $('#'+id).addClass('active-tab').fadeIn();
   //   return false;
   // }); //Для табов!
-  $(function () {
-
-    $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
-      $(this)
-        .addClass('active')
-        .siblings()
-        .removeClass('active')
-        .closest('div.tabs')
-        .find('div.tabs__content')
-        .removeClass('active')
-        .eq($(this).index())
-        .addClass('active');
-    });
-
-  });
-
-});
