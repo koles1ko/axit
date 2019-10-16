@@ -580,7 +580,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+  .section-wrapper{
+    min-height: 320px;
+  }
   .main-title{
     color: #fff;
     &::after{
